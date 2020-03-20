@@ -34,10 +34,10 @@
             // console.log(res.data.data.pass);
              if ( this.formdata.username==res.data.data.username && this.formdata.pass==res.data.data.pass){
               // console.log("登录成功")
-               // this.$router.push({name:'home'})
+               this.$router.push({name:'home'})
                this.$message.success("登录成功")
             }else{
-               this.$message.warning('用户名或密码错误')
+               this.$message.error('用户名或密码错误')
              }
             //else {
             //   console.log("用户名或者密码错误")
