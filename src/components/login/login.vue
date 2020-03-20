@@ -34,7 +34,7 @@
             // console.log(res.data.data.pass);
              if ( this.formdata.username==res.data.data.username && this.formdata.pass==res.data.data.pass){
                let ls=res.data.data.token;
-               if(res.data.meta.status==200){
+               if(res.data.meta.status==200){   //code 等于两百  登录的时候保存token值
                  localStorage.setItem("token",ls)
                }
               // console.log("登录成功")
