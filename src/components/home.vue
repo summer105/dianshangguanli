@@ -9,7 +9,7 @@
           图书管理系统
         </div></el-col>
         <el-col :span="2"><div class="grid-content bg-purple">
-          <a class="logindenglu" href="#">退出</a>
+          <a class="logindenglu" @click="tuichu" href="#">退出</a>
         </div></el-col>
       </el-row>
     </el-header>
@@ -134,6 +134,16 @@
             this.$router.push({name:"login"})
           }
         //if 判断 token  有  ---继续渲染组件
+      },
+      methods:{
+          tuichu(){
+            // 1.清除token
+            localStorage.clear();
+            // 2.提示 退出成功
+            this.$message.success("退出成功")
+           // 3.来到login组件
+            this.$router.push({name:"login"})
+          }
       }
     }
 </script>
