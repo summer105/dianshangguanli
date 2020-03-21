@@ -8,7 +8,6 @@
         <el-form-item label="密码">
           <el-input v-model="formdata.pass"></el-input>
         </el-form-item>
-
         <el-button type="primary" class="login-btn" @click="dllogin">登录</el-button>
       </el-form>
     </div>
@@ -28,13 +27,13 @@
       },
       methods:{
           dllogin(){
-          this.$http.get('./static/mock/denglu.json').then((res)=>{
+          this.$http.get('/denglu.json').then((res)=>{
             //登录成功   跳转home  提示成功   提示不成功
             // console.log(res.data.data.username);
             // console.log(res.data.data.pass);
-             if ( this.formdata.username==res.data.data.username && this.formdata.pass==res.data.data.pass){
-               let ls=res.data.data.token;
-               if(res.data.meta.status==200){   //code 等于两百  登录的时候保存token值
+             if ( this.formdata.username==res.data.username && this.formdata.pass==res.data.pass){
+               let ls=res.data.token;
+               if(res.meta.status==200){   //code 等于两百  登录的时候保存token值
                  localStorage.setItem("token",ls)
                }
               // console.log("登录成功")

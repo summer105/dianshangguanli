@@ -1,5 +1,6 @@
 import Vue from "vue"
 import  Vuex from "vuex"
+import logger from "vuex/dist/logger"
 import chaxun from "@/store/chaxun"
 import jiedu from "@/store/jiedu"
 Vue.use(Vuex);
