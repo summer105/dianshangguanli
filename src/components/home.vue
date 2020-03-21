@@ -17,39 +17,32 @@
       <el-aside class="aside" width="200px">
         <!--     :unique-opened="true"   导航的属性   只打开一个-->
         <el-menu
-
+          router
           :unique-opened="true"
           default-active="2"
           class="el-menu-vertical-demo" >
 
-          <el-submenu index="1">
+          <el-menu-item index="/shouye">
             <template slot="title">
-              <i class="el-icon-location"></i>
-              <span>用户管理</span>
+<!--              <i class="el-icon-location"></i>-->
+              <span>首页</span>
             </template>
-            <el-menu-item-group>
-              <el-menu-item index="1-1">
-                <i class="el-icon-success"></i>
-                <span>用户列表</span>
-              </el-menu-item>
-
-            </el-menu-item-group>
-          </el-submenu>
+          </el-menu-item>
 
              <!--2-->
           <el-submenu index="2">
             <template slot="title">
               <i class="el-icon-location"></i>
-              <span>权限管理</span>
+              <span>图书查询与借阅</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="1-1">
+              <el-menu-item index="/tschanxun">
                 <i class="el-icon-location"></i>
-                <span>角色列表</span>
+                <span>图书查询</span>
               </el-menu-item>
-              <el-menu-item index="1-2">
+              <el-menu-item index="/tsjie">
                 <i class="el-icon-location"></i>
-                <span>权限列表</span>
+                <span>图书借阅</span>
               </el-menu-item>
             </el-menu-item-group>
           </el-submenu>
@@ -58,58 +51,22 @@
           <el-submenu index="3">
             <template slot="title">
               <i class="el-icon-location"></i>
-              <span>商品管理</span>
+              <span>系统管理页面</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="1-1">
+              <el-menu-item index="/yhguanli">
                 <i class="el-icon-location"></i>
-                <span>商品列表</span>
+                <span>用户管理</span>
               </el-menu-item>
-              <el-menu-item index="1-2">
+              <el-menu-item index="/tsguanli">
                 <i class="el-icon-location"></i>
-                <span>分类参数</span>
+                <span>图书管理</span>
               </el-menu-item>
-              <el-menu-item index="1-2">
-                <i class="el-icon-location"></i>
-                <span>商品分类</span>
-              </el-menu-item>
-            </el-menu-item-group>
-          </el-submenu>
-
-<!--          4-->
-
-          <el-submenu index="4">
-            <template slot="title">
-              <i class="el-icon-location"></i>
-              <span>订单管理</span>
-            </template>
-            <el-menu-item-group>
-              <el-menu-item index="1-1">
-                <i class="el-icon-location"></i>
-                <span>订单列表</span>
-              </el-menu-item>
-
-            </el-menu-item-group>
-          </el-submenu>
-
-<!--          5-->
-
-          <el-submenu index="5">
-            <template slot="title">
-              <i class="el-icon-location"></i>
-              <span>数据统计</span>
-            </template>
-            <el-menu-item-group>
-              <el-menu-item index="1-1">
-                <i class="el-icon-location"></i>
-                <span>数据列表</span>
-              </el-menu-item>
-
             </el-menu-item-group>
           </el-submenu>
         </el-menu>
       </el-aside>
-      <el-main class="main">Main</el-main>
+      <el-main class="main"><router-view></router-view></el-main>
     </el-container>
   </el-container>
 </template>
@@ -117,34 +74,34 @@
 <script>
     export default {
         name: "home",
-      //if 判断 token  有  ---继续渲染组件
-      //token没有  ---登录
-      //vue实例之前自动触发
+    //if 判断 token  有  ---继续渲染组件
+    //token没有  ---登录
+    //vue实例之前自动触发
 
-      //这个判断要写在组件渲染之前的生命周期  钩子函数中
-      beforeCreate() {
-       // 声明一个只读常量，一旦声明，常量的值便不可改变。可以声明一个变量，声明以后，必须初始化，否则变错。
+    //这个判断要写在组件渲染之前的生命周期  钩子函数中
+    beforeCreate() {
+      // 声明一个只读常量，一旦声明，常量的值便不可改变。可以声明一个变量，声明以后，必须初始化，否则变错。
 //         const和let有许多相似点：
 // 只在其声明的块级作用域中有效；
 // 不存在作用域提升，是暂时性死区，必须先声明，后使用；
 // 不能重复声明，否则会报错
-          const token=localStorage.getItem("token");
-        //token没有  ---登录
-          if (!token){
-            this.$router.push({name:"login"})
-          }
-        //if 判断 token  有  ---继续渲染组件
-      },
-      methods:{
-          tuichu(){
-            // 1.清除token
-            localStorage.clear();
-            // 2.提示 退出成功
-            this.$message.success("退出成功")
-           // 3.来到login组件
-            this.$router.push({name:"login"})
-          }
+      const token=localStorage.getItem("token");
+      //token没有  ---登录
+      if (!token){
+        this.$router.push({name:"login"})
       }
+      //if 判断 token  有  ---继续渲染组件
+    },
+    methods:{
+      tuichu(){
+        // 1.清除token
+        localStorage.clear();
+        // 2.提示 退出成功
+        this.$message.success("退出成功")
+        // 3.来到login组件
+        this.$router.push({name:"login"})
+      }
+    }
     }
 </script>
 
@@ -158,7 +115,6 @@
   }
 
   .el-aside {
-    background-color: #D3DCE6;
     color: #333;
     text-align: center;
     line-height: 200px;
@@ -167,15 +123,15 @@
   .el-main {
     background-color: #E9EEF3;
     color: #333;
-    text-align: center;
-    line-height: 160px;
+    /*text-align: center;*/
+    /*line-height: 160px;*/
   }
 
 
 
 
 .container{
-
+ height: 100%;
 }
   .header{
 
