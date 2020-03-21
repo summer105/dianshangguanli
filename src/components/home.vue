@@ -3,10 +3,10 @@
     <el-header class="header">
       <el-row>
         <el-col :span="2"><div class="grid-content bg-purple">
-          <img src="../assets/logo.png" alt="无法显示图片" width="100" height="60">
+          <img src="../assets/logo2.png" alt="无法显示图片" width="100" height="60">
         </div></el-col>
-        <el-col :span="20"><div class="grid-content bg-purple-light">
-          图书管理系统
+        <el-col :span="20"><div class="grid-content bg-purple-light h222">
+          <p>图书管理系统</p>
         </div></el-col>
         <el-col :span="2"><div class="grid-content bg-purple">
           <a class="logindenglu" @click="tuichu" href="#">退出</a>
@@ -113,7 +113,9 @@
     text-align: center;
     /*line-height: 60px;*/
   }
-
+.h222 h2{
+  line-height: 24px;
+}
   .el-aside {
     color: #333;
     text-align: center;
