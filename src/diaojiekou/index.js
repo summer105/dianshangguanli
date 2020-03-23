@@ -18,3 +18,9 @@ export  let Hotlist=()=>{
 export let userApi=()=>{
   return axios.get("user.json");
 }
+export  let getbookcatlist=()=>{
+  return axios.get('bookcatlist.json')
+}
+export  let getuserlist=()=>{
+  return axios.get('userlist.json')
+}

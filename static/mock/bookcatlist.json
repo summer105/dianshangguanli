@@ -1,0 +1,26 @@
+{
+    "bookcatlist":[
+        {
+            "bookImg": "http://img3m2.ddimg.cn/14/2/28509242-2_u_6.jpg",
+            "bookName": "古人日常生活",
+            "bookPrice": 38.5,
+            "bookCategory": "历史",
+            "bookNum": 2,
+            "bookInfo": "一本书满足你对古人日常生活的全部好奇！精装典藏版，收录全新话题！超过400万次点赞、1.3亿次播放的抖音大号“讲历史的王老师”作品。5大类主题，70个话题，50多张精美插图。",
+            "bookId": 3,
+            "Borrow":false,
+            "isSed": true
+        },
+        {
+            "bookImg": "http://img3m8.ddimg.cn/71/21/28516328-3_u_6.jpg",
+            "bookName": "大话西方艺术史",
+            "bookPrice": 38.5,
+            "bookCategory": "历史",
+            "bookNum": 2,
+            "bookInfo": "句句有梗的极简艺术史，意外艺术八年积累！用浅白风趣奇葩的方式，讲深沉丰厚宽广的艺术史。30000年艺术历程，150件名画经典，40位艺术大师，20个艺术流派。零压力入门",
+            "bookId": 4,
+            "Borrow":false,
+            "isSed": true
+        }
+    ]
+}
