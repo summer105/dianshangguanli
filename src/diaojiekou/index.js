@@ -12,3 +12,9 @@ export  let denglu=()=>{  //函数  接口写的是一个函数  执行这个函
 export  let Hotlist=()=>{
   return axios.get('hotlist.json')
 }
+export  let getbookcatlist=()=>{
+  return axios.get('bookcatlist.json')
+}
+export  let getuserlist=()=>{
+  return axios.get('userlist.json')
+}

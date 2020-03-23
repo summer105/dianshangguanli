@@ -59,7 +59,7 @@
             "bookImg": "http://img3m9.ddimg.cn/65/3/28501769-3_u_3.jpg",
             "bookName": " 勇敢长大",
             "bookPrice": 38.5,
-            "bookCategory": "历史",
+            "bookCategory": "儿童",
             "bookNum": 2,
             "bookInfo": "让阅读给孩子成长的力量和智慧。凯特·格林纳威奖、水石童书奖作家领衔创作，BBC儿童频道推荐，《金融时报》图书，字里行间流露出对孩子的认可与鼓励。赠钱儿爸讲读的故事音频",
             "bookId": 6,
@@ -591,6 +591,72 @@
             "bookNum": 2,
             "bookInfo": "让阅读给孩子成长的力量和智慧。凯特·格林纳威奖、水石童书奖作家领衔创作，BBC儿童频道推荐，《金融时报》图书，字里行间流露出对孩子的认可与鼓励。赠钱儿爸讲读的故事音频",
             "bookId": 54,
+            "Borrow":false,
+            "isSed": false
+        },
+        {
+            "bookImg": "http://img3m2.ddimg.cn/1/22/28497052-1_l.jpg",
+            "bookName": "三生三世枕上书",
+            "bookPrice": 38.5,
+            "bookCategory": "小说",
+            "bookNum": 2,
+            "bookInfo": "让阅读给孩子成长的力量和智慧。凯特·格林纳威奖、水石童书奖作家领衔创作，BBC儿童频道推荐，《金融时报》图书，字里行间流露出对孩子的认可与鼓励。赠钱儿爸讲读的故事音频",
+            "bookId": 55,
+            "Borrow":false,
+            "isSed": false
+        },
+        {
+            "bookImg": "http://img3m4.ddimg.cn/33/29/25101384-1_l.jpg",
+            "bookName": "活着活着就老了",
+            "bookPrice": 38.5,
+            "bookCategory": "文学",
+            "bookNum": 2,
+            "bookInfo": "让阅读给孩子成长的力量和智慧。凯特·格林纳威奖、水石童书奖作家领衔创作，BBC儿童频道推荐，《金融时报》图书，字里行间流露出对孩子的认可与鼓励。赠钱儿爸讲读的故事音频",
+            "bookId": 56,
+            "Borrow":false,
+            "isSed": false
+        }, 
+        {
+            "bookImg": "http://img3m8.ddimg.cn/74/25/23681468-1_l_1.jpg",
+            "bookName": "英语笔译常用词语",
+            "bookPrice": 38.5,
+            "bookCategory": "外语",
+            "bookNum": 2,
+            "bookInfo": "让阅读给孩子成长的力量和智慧。凯特·格林纳威奖、水石童书奖作家领衔创作，BBC儿童频道推荐，《金融时报》图书，字里行间流露出对孩子的认可与鼓励。赠钱儿爸讲读的故事音频",
+            "bookId": 57,
+            "Borrow":false,
+            "isSed": false
+        },
+        {
+            "bookImg": "http://img3m6.ddimg.cn/97/9/27940966-1_l_3.jpg",
+            "bookName": "从零开始学ppt",
+            "bookPrice": 38.5,
+            "bookCategory": "办公软件",
+            "bookNum": 2,
+            "bookInfo": "让阅读给孩子成长的力量和智慧。凯特·格林纳威奖、水石童书奖作家领衔创作，BBC儿童频道推荐，《金融时报》图书，字里行间流露出对孩子的认可与鼓励。赠钱儿爸讲读的故事音频",
+            "bookId": 58,
+            "Borrow":false,
+            "isSed": false
+        },
+        {
+            "bookImg": "http://img3m9.ddimg.cn/56/27/26482259-1_l_10.jpg",
+            "bookName": "断舍离",
+            "bookPrice": 38.5,
+            "bookCategory": "文学",
+            "bookNum": 2,
+            "bookInfo": "让阅读给孩子成长的力量和智慧。凯特·格林纳威奖、水石童书奖作家领衔创作，BBC儿童频道推荐，《金融时报》图书，字里行间流露出对孩子的认可与鼓励。赠钱儿爸讲读的故事音频",
+            "bookId": 59,
+            "Borrow":false,
+            "isSed": false
+        },
+        {
+            "bookImg": "http://img3m3.ddimg.cn/50/6/28510763-1_l_7.jpg",
+            "bookName": "在路上",
+            "bookPrice": 38.5,
+            "bookCategory": "文学",
+            "bookNum": 2,
+            "bookInfo": "让阅读给孩子成长的力量和智慧。凯特·格林纳威奖、水石童书奖作家领衔创作，BBC儿童频道推荐，《金融时报》图书，字里行间流露出对孩子的认可与鼓励。赠钱儿爸讲读的故事音频",
+            "bookId":60,
             "Borrow":false,
             "isSed": false
         }
