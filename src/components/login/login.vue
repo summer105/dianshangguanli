@@ -42,8 +42,6 @@
             }else{
                this.$message.error('用户名或密码错误')
              }
-
-
               console.log(res);
             })
           }
