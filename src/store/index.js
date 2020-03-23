@@ -3,7 +3,11 @@ import  Vuex from "vuex"
 import logger from "vuex/dist/logger"
 import chaxun from "@/store/chaxun"
 import jiedu from "@/store/jiedu"
+
 import tsguanli from "@/store/tsguanli"
+
+import user from "@/store/user"
+
 Vue.use(Vuex);
 
 //为什么用const 常量  因为store不可以被改变
@@ -12,6 +16,7 @@ const store=new Vuex.Store({
     chaxun,
     jiedu,
     tsguanli,
+    user
   },
 
   strict:true,//开启严格模式  唯一改变状态的方式是mutations  否则报错
@@ -29,7 +34,7 @@ const store=new Vuex.Store({
   },
   plugins:[logger()]  //加入插件 日志
 
-})
+});
 
 export default store   //不可以被改变地址
 //专门用于单页面应用 spa
