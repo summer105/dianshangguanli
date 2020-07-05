@@ -9,7 +9,7 @@
         </el-col>
         <el-col :span="20">
           <div class="grid-content bg-purple-light h222">
-            <p>图书管理系统</p>
+            <p>图书管理系统12</p>
           </div>
         </el-col>
         <el-col :span="2">
@@ -26,7 +26,7 @@
           <el-menu-item index="/shouye">
             <template slot="title">
               <!--              <i class="el-icon-location"></i>-->
-              <span>首页</span>
+              <span>首页1</span>
             </template>
           </el-menu-item>
 
